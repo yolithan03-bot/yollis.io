@@ -1,0 +1,93 @@
+/* Estilo base */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #272727, #1f1f1f);
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+header h1 {
+  margin: 0;
+  color: #a56eff;
+}
+header p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Área principal */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Cartões de formulário */
+.form-card {
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.form-card h2 {
+  color: #cba0ff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+/* Inputs e labels */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+input, select, textarea, button {
+  background-color: #3a3a3a;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #a56eff;
+  outline: none;
+  background-color: #444;
+}
+
+/* Botões */
+input[type="submit"], button {
+  background-color: #a56eff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+input[type="submit"]:hover, button:hover {
+  background-color: #8f5fe8;
+  transform: scale(1.03);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #181818;
+  color: #777;
+  font-size: 0.9rem;
+}

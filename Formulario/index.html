@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios de Formulários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Formulários</h1>
+  </header>
+
+  <main>
+
+    <section class="form-card">
+      <h2>Formulário Simples</h2>
+      <form>
+        <label>Nome completo:</label>
+        <input type="text" name="nomeCompleto" required>
+
+        <label>Email:</label>
+        <input type="email" name="email2" required>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+   
+    <section class="form-card">
+      <h2> Login</h2>
+      <form>
+        <label>Usuário:</label>
+        <input type="text" name="usuario" required>
+
+        <label>Senha:</label>
+        <input type="password" name="senhaLogin" required>
+
+        <input type="submit" value="Entrar">
+      </form>
+    </section>
+
+
+    <section class="form-card">
+      <h2>Inscrição em Evento</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" name="nomeEv" required>
+
+        <label>Email:</label>
+        <input type="email" name="emailEv" required>
+
+        <label>Telefone:</label>
+        <input type="tel" name="telEv" required>
+
+        <label>Workshop:</label>
+        <select name="workshop" required>
+          <option value="">---Seleccione---</option>
+          <option>HTML & CSS</option>
+          <option>JavaScript</option>
+          <option>Base de Dados</option>
+        </select>
+
+        <label><input type="checkbox" name="termos" required> Aceito os termos</label>
+
+        <input type="submit" value="Inscrever">
+      </form>
+    </section>
+
+
+    <section class="form-card">
+      <h2>Candidatura a Emprego</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" name="nomeCand" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="emailCand" required>
+
+        <label>Experiência (anos):</label>
+        <input type="number" name="exp" min="0" max="50" required>
+
+        <label>Formação:</label>
+        <input type="text" name="formacao" required>
+
+        <label>Contacto:</label>
+        <input type="tel" name="contacto" required>
+
+        <label>Hora de cadastro:</label>
+        <input type="time" name="horaCadastro" required>
+
+        <label>Currículo:</label>
+        <input type="file" name="curriculo" accept=".pdf,.doc,.docx" required>
+
+        <input type="submit" value="Enviar candidatura">
+      </form>
+    </section>
+
+  
+    <section class="form-card">
+      <h2>Dados do Estudante</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" id="nomeStu" name="nomeStu" required>
+
+        <label>Sexo:</label>
+        <div class="inline-group">
+          <label><input type="radio" name="sexo" value="Masculino" required> Masculino</label>
+          <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+          <label><input type="radio" name="sexo" value="Outro"> Outro</label>
+        </div>
+
+        <label>Email:</label>
+        <input type="email" id="emailStu" name="emailStu" required>
+
+        <label>Hobbies:</label>
+        <div class="inline-group">
+          <label><input type="checkbox" name="hobbies" value="Musica"> Música</label>
+          <label><input type="checkbox" name="hobbies" value="Desporto"> Desporto</label>
+          <label><input type="checkbox" name="hobbies" value="Leitura"> Leitura</label>
+        </div>
+
+        <label>Curso:</label>
+        <select id="cursoStu" name="cursoStu" required>
+          <option value="">---Seleccione---</option>
+          <option value="programacao">Programação</option>
+          <option value="redes">Redes</option>
+          <option value="design">Design</option>
+        </select>
+
+        <label>Profissão:</label>
+        <input type="text" id="profissao" name="profissao">
+
+        <label>Data de nascimento:</label>
+        <input type="date" id="nascStu" name="nascStu" required>
+
+        <label>Contacto:</label>
+        <input type="tel" id="contactoStu" name="contactoStu" required>
+
+        <label>Hora de cadastro:</label>
+        <input type="time" id="horaStu" name="horaStu" required>
+
+        <label>Residência:</label>
+        <input type="text" id="residencia" name="residencia" required>
+
+        <label><input type="checkbox" name="termosStu" required> Aceito os termos</label>
+
+        <label>Mensagem:</label>
+        <textarea id="mensagemStu" name="mensagemStu" rows="4"></textarea>
+
+        <div class="buttons">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="form-card">
+      <h2>Cadastro de Medicamento</h2>
+      <form>
+        <label>Nome do medicamento:</label>
+        <input type="text" id="nomeMed" name="nomeMed" required>
+
+        <label>Categoria:</label>
+        <select id="categoriaMed" name="categoriaMed" required>
+          <option value="">---Seleccione---</option>
+          <option value="analgesico">Analgésico</option>
+          <option value="antibiotico">Antibiótico</option>
+          <option value="antiinflamatorio">Anti-inflamatório</option>
+        </select>
+
+        <label>Validade:</label>
+        <input type="date" id="validade" name="validade" required>
+
+        <label>Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="0" required>
+
+        <label>Fornecedor:</label>
+        <input type="text" id="fornecedor" name="fornecedor">
+
+        <div class="buttons">
+          <button type="submit">Cadastrar</button>
+          <button type="button" onclick="this.form.reset()">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+  
+    <section class="form-card">
+      <h2>Criar Conta</h2>
+      <form id="signup" onsubmit="return validarSenha()">
+        <label>Nome:</label>
+        <input type="text" id="nome8" name="nome8" required>
+
+        <label>Email:</label>
+        <input type="email" id="email8" name="email8" required>
+
+        <label>Senha:</label>
+        <input type="password" id="senha8" name="senha8"
+               pattern="(?=^.{8,}$)(?=.*\\d)(?=.*[A-Z]).*"
+               title="Mínimo 8 caracteres, 1 maiúscula e 1 número" required>
+
+        <label>Confirme a senha:</label>
+        <input type="password" id="confSenha" name="confSenha" required>
+
+        <button type="submit">Criar conta</button>
+      </form>
+    </section>
+
+  
+    <section class="form-card">
+      <h2>Pagamento com Cartão</h2>
+      <form>
+        <label>Nome no cartão:</label>
+        <input type="text" id="nomeCartao" name="nomeCartao" required>
+
+        <label>Número do cartão:</label>
+        <input type="text" id="numCartao" name="numCartao"
+               pattern="\\d{16}" placeholder="1234123412341234"
+               title="16 dígitos sem espaços" required>
+
+        <label>Data de validade:</label>
+        <input type="month" id="validadeCartao" name="validadeCartao" required>
+
+        <label>CVV:</label>
+        <input type="text" id="cvv" name="cvv" pattern="\\d{3}" placeholder="123" title="3 dígitos" required>
+
+        <button type="submit">Pagar</button>
+      </form>
+    </section>
+
+
+    <section class="form-card">
+      <h2>Formulário Multi-etapas</h2>
+      <form id="multi">
+        <fieldset>
+          <legend>1. Dados pessoais</legend>
+          <label>Nome: <input type="text" name="nome" required></label>
+          <button type="button" onclick="nextStep(0)">Próximo</button>
+        </fieldset>
+
+        <fieldset style="display:none">
+          <legend>2. Contacto</legend>
+          <label>Email: <input type="email" name="email" required></label>
+          <button type="button" onclick="prevStep(0)">Voltar</button>
+          <button type="button" onclick="nextStep(1)">Próximo</button>
+        </fieldset>
+
+        <fieldset style="display:none">
+          <legend>3. Confirmação</legend>
+          <p>Revise e envie.</p>
+          <button type="button" onclick="prevStep(1)">Voltar</button>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+
+  
+    <section class="form-card">
+      <h2>Cadastro de Aluno</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Telefone:</label>
+        <input type="tel" name="tel" required>
+
+        <label>Curso:</label>
+        <select name="curso" required>
+          <option value="">---Seleccione---</option>
+          <option>Programação</option>
+        </select>
+
+        <label>Data de nascimento:</label>
+        <input type="date" name="nasc" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="form-card">
+      <h2>Cadastro de Professor</h2>
+      <form enctype="multipart/form-data">
+        <label>Nome:</label>
+        <input type="text" id="nomeProf" name="nomeProf" required>
+
+        <label>Email:</label>
+        <input type="email" id="emailProf" name="emailProf" required>
+
+        <label>Disciplina:</label>
+        <input type="text" id="disciplina" name="disciplina" required>
+
+        <label>Foto de perfil:</label>
+        <input type="file" id="fotoProf" name="fotoProf" accept="image/*" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+ 
+    <section class="form-card">
+      <h2>Avaliação do Curso</h2>
+      <form>
+        <label>Curso:</label>
+        <select id="curso13" name="curso13" required>
+          <option value="">---Seleccione---</option>
+          <option value="programacao">Programação</option>
+          <option value="redes">Redes</option>
+        </select>
+
+        <p>Avaliação:</p>
+        <div class="inline-group">
+          <label><input type="radio" name="avaliacao" value="1" required> 1</label>
+          <label><input type="radio" name="avaliacao" value="2"> 2</label>
+          <label><input type="radio" name="avaliacao" value="3"> 3</label>
+          <label><input type="radio" name="avaliacao" value="4"> 4</label>
+          <label><input type="radio" name="avaliacao" value="5"> 5</label>
+        </div>
+
+        <p>Gostos:</p>
+        <div class="inline-group">
+          <label><input type="checkbox" name="gosto" value="teoria"> Teoria</label>
+          <label><input type="checkbox" name="gosto" value="pratica"> Prática</label>
+          <label><input type="checkbox" name="gosto" value="projetos"> Projetos</label>
+        </div>
+
+        <label>Comentário:</label>
+        <textarea id="coment" name="coment" rows="4"></textarea>
+
+        <button type="submit">Enviar opinião</button>
+      </form>
+    </section>
+
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
